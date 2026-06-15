@@ -33,17 +33,33 @@
 // } else {
 //     console.log("not a leap year");
 // }
-var num=5
-var fc=0
-for(let i = 1; i <= num; i++) {
-    if(num % i === 0)
-        fc++;
+// var num=5
+// var fc=0
+// for(let i = 1; i <= num; i++) {
+//     if(num % i === 0)
+//         fc++;
+// }
+// if(fc === 2) {
+//     console.log("prime");
+// } else  {
+//     console.log("Not a prime");
+// }
+
+// let heading = document.getElementsByClassName("h1");
+// console.log(heading);
+// heading[1].textContent = "bye bye";
+// heading[1].innerHTML = "bye bye";
+// heading[2].innerHTML = "bye bye";
+//let display = document.getElementById("display");
+//console.log(display);
+//let para = document.getElementById("para");
+// console.log(para);
+//para.innerHTML="<b>adios</b>";
+const change = () => {
+    let display = document.getElementById("display");
+    display.innerHTML = "Hello Keerthana";
 }
-if(fc === 2) {
-    console.log("prime");
-} else  {
-    console.log("Not a prime");
-}
+
 
 
 
