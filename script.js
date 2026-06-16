@@ -73,11 +73,31 @@
 //     changeColor();
 //     setInterval(changeColor, 1000);
 // }
-const changecolor = () => {
-    let box = document.getElementById("box");
-    box.style.backgroundColor = "red";
-}
+//const changecolor = () => {
+       //let box = document.getElementById("box");
+        // box.style.backgroundColor = "red";
+ // }
+  function changeColor() {
+     let r = Math.floor(Math.random() * 256);
+     let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
 
+     let box = document.getElementById("box");
+      box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      //setInterval(changeColor, 1000);
+  }
+
+
+// function changeColor() {
+//     const colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink"];
+
+//     const c1 = colors[Math.floor(Math.random() * colors.length)];
+//     const c2 = colors[Math.floor(Math.random() * colors.length)];
+//     const c3 = colors[Math.floor(Math.random() * colors.length)];
+
+//     document.getElementById("box").style.background =
+//         `linear-gradient(45deg, ${c1}, ${c2}, ${c3})`;
+// }
 
 
 
