@@ -44,7 +44,7 @@
 // } else  {
 //     console.log("Not a prime");
 // }
-
+//----------------------15/06/2026------------------------
 // let heading = document.getElementsByClassName("h1");
 // console.log(heading);
 // heading[1].textContent = "bye bye";
@@ -55,10 +55,32 @@
 //let para = document.getElementById("para");
 // console.log(para);
 //para.innerHTML="<b>adios</b>";
-const change = () => {
-    let display = document.getElementById("display");
-    display.innerHTML = "Hello Keerthana";
+
+
+// const change = () => {
+//     let display = document.getElementById("display");
+//     display.innerHTML = "Hello Keerthana";
+//     display.style.backgroundColor = "green";
+//     display.style.color="yellow";
+// }
+
+// const colors = ["red", "blue", "green", "yellow", "orange", "pink"];
+// function randomColor() {
+//     return colors[Math.floor(Math.random() * colors.length)];
+// }
+// function changeColor() {
+//     document.getElementById("box").style.backgroundColor = `linear-gradient(45deg, ${randomColor()}, ${randomColor()})`;
+//     changeColor();
+//     setInterval(changeColor, 1000);
+// }
+const changecolor = () => {
+    let box = document.getElementById("box");
+    box.style.backgroundColor = "red";
 }
+
+
+
+
 
 
 
