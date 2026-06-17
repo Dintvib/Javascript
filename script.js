@@ -111,6 +111,7 @@ const changeColor = () => {
        }
        color.innerHTML = randcolor
        display.style.backgroundColor = randcolor;
+       console.log(randcolor);
 }
 
 

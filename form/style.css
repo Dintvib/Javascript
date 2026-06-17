@@ -1,19 +1,78 @@
-body {
-    text-align: center;
-    margin-top: 100px;
-    font-family: Arial;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
 }
 
-form {
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid black;
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-input {
-    padding: 8px;
+.form-container{
+    width:350px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-button {
-    padding: 8px 15px;
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+input[type="text"],
+input[type="password"]{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    transition:0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    border-color:#667eea;
+    box-shadow:0 0 8px rgba(102,126,234,0.3);
+}
+
+input[type="submit"]{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#667eea;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    background:#5563d6;
+    transform:translateY(-2px);
+}
+
+#error{
+    text-align:center;
+    margin-bottom:10px;
+    color:red;
+    font-size:14px;
+}
+
+.form-container:hover{
+    transform:scale(1.02);
+    transition:0.3s;
 }
