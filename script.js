@@ -77,15 +77,15 @@
        //let box = document.getElementById("box");
         // box.style.backgroundColor = "red";
  // }
-  function changeColor() {
-     let r = Math.floor(Math.random() * 256);
-     let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
+//   function changeColor() {
+//      let r = Math.floor(Math.random() * 256);
+//      let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
 
-     let box = document.getElementById("box");
-      box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-      //setInterval(changeColor, 1000);
-  }
+//      let box = document.getElementById("box");
+//       box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+//       //setInterval(changeColor, 1000);
+//   }
 
 
 // function changeColor() {
@@ -99,6 +99,19 @@
 //         `linear-gradient(45deg, ${c1}, ${c2}, ${c3})`;
 // }
 
+
+let colorcodes= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const changeColor = () => {
+       let display = document.getElementById("display");
+       let randcolor = "#";
+       let color = document.getElementById("color");
+       for(let i = 0; i < 6; i++) {
+              let randNo = Math.floor(Math.random() * 16);
+              randcolor += colorcodes[randNo];
+       }
+       color.innerHTML = randcolor
+       display.style.backgroundColor = randcolor;
+}
 
 
 
