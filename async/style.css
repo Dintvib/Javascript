@@ -3,8 +3,8 @@ body {
 }
 
 #display {
-    width: 400px;
-    height: 400px; 
+    width: 500px;
+    height: 500px; 
     border: 3px solid black;
     margin: 3cm auto;
 }

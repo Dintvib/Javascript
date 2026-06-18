@@ -1,6 +1,6 @@
 const getImage = async() => {
     let display = document.getElementById("display")
-    
+
     try {
         const res= await fetch("https://dog.ceo/api/breeds/image/random")
         const data = await res.json()
@@ -10,6 +10,7 @@ const getImage = async() => {
     } catch (err) {
         console.log(err.name);
     }
-    
-
 }
+
+
+
